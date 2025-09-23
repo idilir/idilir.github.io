@@ -7,7 +7,7 @@
     <meta name="description" content="Portfolio of Idil">
     <meta name="author" content="Idil">
 
-    <title>Idil's web page</title>
+    <title>Idil's Web Page</title>
 
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,37 +22,37 @@
     <!-- CUSTOM COLORS -->
     <style>
       body {
-        background-color: #000000;
-        color: #ffffff;
+        background-color: #000;
+        color: #fff;
       }
 
-      /* siyah-beyaz geçişli section'lar */
       section:nth-of-type(odd) {
-        background-color: #000000 !important;
-        color: #ffffff !important;
+        background-color: #000 !important;
+        color: #fff !important;
       }
 
       section:nth-of-type(even) {
-        background-color: #ffffff !important;
-        color: #000000 !important;
+        background-color: #fff !important;
+        color: #000 !important;
       }
 
-      /* navbar ve footer */
       .navbar, .site-footer {
-        background-color: #000000 !important;
-        color: #ffffff !important;
+        background-color: #000 !important;
+        color: #fff !important;
       }
 
       .navbar a, .site-footer a {
-        color: #ffffff !important;
+        color: #fff !important;
       }
 
-      /* başlıklar ve yazılar */
-      h1, h2, h3, h4, h5, h6, p, span, a, small, strong {
+      h1, h2, h3, h4, h5, h6 {
         color: inherit !important;
       }
 
-      /* projects kartları */
+      p, span, small, strong, a {
+        color: inherit !important;
+      }
+
       .projects-info {
         background: transparent !important;
         color: inherit !important;
@@ -62,30 +62,38 @@
         color: inherit !important;
       }
 
-      /* butonlar */
       .custom-btn {
-        background-color: #ffffff !important;
-        color: #000000 !important;
+        background-color: #fff !important;
+        color: #000 !important;
         border: none;
       }
 
       .custom-btn:hover {
         background-color: #ddd !important;
-        color: #000000 !important;
+        color: #000 !important;
       }
 
-      /* formlar */
-      label, input, textarea {
-        color: #000000 !important;
+      label {
+        color: inherit !important;
       }
 
       input, textarea {
-        background-color: #ffffff !important;
-        border: 1px solid #000000 !important;
+        background-color: #fff !important;
+        border: 1px solid #000 !important;
+        color: #000 !important;
       }
 
       input::placeholder, textarea::placeholder {
         color: #666 !important;
+      }
+
+      /* Portrait hero image */
+      .hero-image {
+        width: 100%;
+        max-height: 600px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 12px;
       }
     </style>
 </head>
@@ -105,7 +113,6 @@
                 <ul class="navbar-nav ms-lg-5">
                     <li class="nav-item"><a class="nav-link click-scroll" href="#section_1">Home</a></li>
                     <li class="nav-item"><a class="nav-link click-scroll" href="#section_2">About</a></li>
-                    <li class="nav-item"><a class="nav-link click-scroll" href="#section_3">Services</a></li>
                     <li class="nav-item"><a class="nav-link click-scroll" href="#section_4">HCI Projects</a></li>
                     <li class="nav-item"><a class="nav-link click-scroll" href="#section_5">Contact</a></li>
                 </ul>
@@ -129,7 +136,7 @@
                         </div>
                     </div>
                     <div class="col-lg-5 col-12 position-relative">
-                        <img src="images/portrait-idil.png" class="hero-image img-fluid" alt="">
+                        <img src="images/portrait-idil.png" class="hero-image img-fluid" alt="Portrait of Idil">
                     </div>
                 </div>
             </div>
@@ -140,17 +147,17 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-12">
-                        <img src="images/about-idil.jpg" class="about-image img-fluid" alt="">
+                        <img src="images/about-idil.jpg" class="about-image img-fluid" alt="About Idil">
                     </div>
                     <div class="col-lg-6 col-12 mt-5 mt-lg-0">
                         <div class="about-thumb">
                             <div class="section-title-wrap d-flex justify-content-end align-items-center mb-4">
                                 <h2 class="me-4 mb-0">My Story</h2>
-                                <img src="images/idil-avatar.jpg" class="avatar-image img-fluid" alt="">
+                                <img src="images/idil-avatar.jpg" class="avatar-image img-fluid" alt="Avatar">
                             </div>
                             <h3 class="pt-2 mb-3">A little bit about me</h3>
-                            <p>I am Idil, passionate about computer science. I am a third year student studying in Turkey.</p>
-                            <p>Now I am in Hong Kong for an exchange semester.</p>
+                            <p>I am Idil, passionate about computer science. I am a third-year student studying in Turkey.</p>
+                            <p>Currently, I am in Hong Kong for an exchange semester.</p>
                         </div>
                     </div>
                 </div>
@@ -167,8 +174,8 @@
                                 <h4 class="mb-0">Information</h4>
                             </div>
                             <div class="profile-body">
-                                <p><span class="profile-small-title">Name</span> <span>Idil Isil Yildirim</span></p>
-                                <p><span class="profile-small-title">Email</span> <span><a href="mailto:idil@example.com">idilisil7@gmail.com</a></span></p>
+                                <p><span class="profile-small-title">Name:</span> <span>Idil Isil Yildirim</span></p>
+                                <p><span class="profile-small-title">Email:</span> <span><a href="mailto:idilisil7@gmail.com">idilisil7@gmail.com</a></span></p>
                             </div>
                         </div>
                     </div>
@@ -211,7 +218,7 @@
                                 <small class="projects-tag">Accessibility</small>
                                 <h3 class="projects-title">Inclusive Mobile App</h3>
                             </div>
-                            <img src="images/projects/hci1.png" class="projects-image img-fluid" alt="">
+                            <img src="images/projects/hci1.png" class="projects-image img-fluid" alt="Inclusive Mobile App">
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12">
@@ -220,7 +227,7 @@
                                 <small class="projects-tag">Eye-Tracking</small>
                                 <h3 class="projects-title">E-learning Interface Study</h3>
                             </div>
-                            <img src="images/projects/hci2.png" class="projects-image img-fluid" alt="">
+                            <img src="images/projects/hci2.png" class="projects-image img-fluid" alt="E-learning Interface Study">
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12">
@@ -229,7 +236,7 @@
                                 <small class="projects-tag">VR</small>
                                 <h3 class="projects-title">Immersive Prototype</h3>
                             </div>
-                            <img src="images/projects/hci3.png" class="projects-image img-fluid" alt="">
+                            <img src="images/projects/hci3.png" class="projects-image img-fluid" alt="Immersive Prototype">
                         </div>
                     </div>
                 </div>
@@ -272,6 +279,3 @@
 
 </body>
 </html>
-
-
-

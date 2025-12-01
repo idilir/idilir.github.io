@@ -1,1 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project 3 – Hyperfocus Lecture AR Enhancement</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #0b1024;
+      color: #f5f5f5;
+    }
+
+    header {
+      padding: 2.5rem 1.5rem 1.5rem;
+      background: radial-gradient(circle at top left, #3941ff, #050814);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: 2.1rem;
+    }
+
+    .subtitle {
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+
+    nav {
+      margin-top: 1.2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-size: 0.9rem;
+      padding: 0.35rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.25);
+      color: #f5f5f5;
+      opacity: 0.9;
+    }
+
+    nav a:hover {
+      background: rgba(255,255,255,0.12);
+    }
+
+    main {
+      padding: 2rem 1.5rem 3rem;
+    }
+
+    section {
+      margin-bottom: 2.2rem;
+      background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(0,0,0,0.35));
+      border-radius: 1rem;
+      padding: 1.5rem 1.7rem;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+
+    section h2 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      margin-bottom: 0.6rem;
+    }
+
+    h3 {
+      margin-bottom: 0.4rem;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin-top: 0.1rem;
+      font-size: 0.97rem;
+    }
+
+    ul {
+      padding-left: 1.1rem;
+      margin: 0.4rem 0 0.6rem;
+      font-size: 0.96rem;
+    }
+
+    li {
+      margin-bottom: 0.25rem;
+    }
+
+    a {
+      color: #9cf1ff;
+    }
+
+    .tagline {
+      font-style: italic;
+      opacity: 0.8;
+      margin-top: 0.15rem;
+    }
+
+    .meta {
+      font-size: 0.9rem;
+      opacity: 0.85;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 0.9rem;
+      border: 1px solid rgba(255,255,255,0.12);
+      margin-top: 0.8rem;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.6rem;
+    }
+
+    .pill {
+      font-size: 0.8rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.25);
+      opacity: 0.9;
+    }
+
+    .deliverables-list a {
+      display: inline-block;
+      margin-bottom: 0.35rem;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      padding: 0 1.5rem 2.5rem;
+      opacity: 0.7;
+    }
+
+    @media (max-width: 640px) {
+      header, main {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      section {
+        padding: 1.2rem 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Hyperfocus Lecture AR Enhancement</h1>
+      <p class="tagline">Using AR overlays to help students stay focused and understand complex lectures.</p>
+      <p class="meta">
+        Student: YOUR NAME HERE<br>
+        Course: Human–Computer Interaction &nbsp;•&nbsp; Role: User Research & Point-of-View Framing
+      </p>
+      <nav>
+        <a href="#overview">Overview</a>
+        <a href="#role">My Role</a>
+        <a href="#process">Process</a>
+        <a href="#video">Prototype Video</a>
+        <a href="#deliverables">Deliverables</a>
+        <a href="#reflection">Personal Reflection</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <section id="overview">
+        <h2>Project Overview</h2>
+        <p>
+          This project explores how augmented reality (AR) can support students who struggle to stay focused
+          during lectures or who face language barriers in class. We designed an AR-enhanced lecture experience
+          that provides visual cues, key-concept highlights, and language support on top of the existing
+          classroom environment.
+        </p>
+        <p>
+          Our target audience includes:
+        </p>
+        <ul>
+          <li>Professors who want to keep students engaged and check understanding in real time.</li>
+          <li>Students with attention and focus difficulties (for example, ADHD-like symptoms).</li>
+          <li>Students with lower English proficiency who benefit from subtitles and visual scaffolding.</li>
+        </ul>
+        <div class="pill-list">
+          <span class="pill">AR / XR</span>
+          <span class="pill">Education</span>
+          <span class="pill">Attention & Focus</span>
+          <span class="pill">Inclusive Design</span>
+          <span class="pill">User Research</span>
+        </div>
+      </section>
+
+      <section id="role">
+        <h2>My Role</h2>
+        <p>
+          I worked mainly on the <strong>interview and Point-of-View (POV) / opportunity framing</strong> for this project.
+          I helped design and conduct interviews with both teachers and students, synthesized their responses
+          into concrete POV statements, and translated these into opportunity areas for our final AR solution.
+        </p>
+        <p>
+          Because I personally struggle with staying focused in lectures, I was also an “internal user.”
+          This made it easier for me to recognize when our ideas truly addressed real attention problems
+          and when they were only “nice to have” features.
+        </p>
+      </section>
+
+      <section id="process">
+        <h2>Design Process</h2>
+
+        <h3>1. Needfinding: Interviews with Teachers and Students</h3>
+        <p>
+          Together with my teammates, I interviewed professors about when students seem most disengaged in
+          class and which types of content are hardest to teach. I also interviewed students about where they
+          lose focus, what distracts them, and how they currently try to keep up with fast lectures.
+          For this part of the project I was responsible for the <strong>interview questions and the interview POP section</strong>.
+        </p>
+        <p>
+          From these conversations we identified three primary user groups:
+        </p>
+        <ul>
+          <li>
+            <strong>Professors</strong> who need a way to keep students engaged and make sure core concepts are
+            clearly understood.
+          </li>
+          <li>
+            <strong>Student A – focus difficulties</strong>, who misses important points during long lectures and
+            needs structured, visual cues to stay on track.
+          </li>
+          <li>
+            <strong>Student B – lower English proficiency</strong>, who struggles with terminology and speed and
+            needs multilingual or visual support.
+          </li>
+        </ul>
+
+        <h3>2. Point-of-View Statements & Mindmap</h3>
+        <p>
+          Based on the interviews, I helped write POV statements for each user type and co-created a mindmap
+          that connected “focus” to potential AR features. These features included subtitles, progress bars,
+          visual emphasis of key ideas, and language translation overlays.
+        </p>
+
+        <h3>3. Concept Storyboards & Speed-Dating</h3>
+        <p>
+          As a team we sketched several storyboards, such as AR-enhanced classroom lectures, VR labs,
+          discussion forums, and onsite VR field trips. We then used a “speed-dating” method to quickly test
+          these concepts with potential users and gathered feedback on which scenarios felt most valuable
+          and realistic for everyday use.
+        </p>
+        <p>
+          The results clearly showed that <strong>AR enhancements for in-person classroom lectures</strong> were the
+          most preferred direction, because they directly support existing classes instead of replacing them.
+        </p>
+
+        <h3>4. Final AR Concept & Evaluation</h3>
+        <p>
+          We converged on an AR system that overlays:
+        </p>
+        <ul>
+          <li>Key-concept highlights and visual explanations during lectures.</li>
+          <li>Subtitles or simplified text for students with language barriers.</li>
+          <li>Focus-supporting elements such as progress bars and subtle notifications.</li>
+        </ul>
+        <p>
+          After creating a prototype and showing it to participants, we collected survey data on
+          usability and learning impact. Most participants reported that the AR overlays were easy
+          to follow and significantly improved their understanding of the lecture content.
+        </p>
+      </section>
+
+      <section id="video">
+        <h2>Prototype Demo Video</h2>
+        <p>
+          This short demo video shows how the AR overlays appear during a live lecture and how students
+          interact with them.
+        </p>
+        <div class="video-wrapper">
+          <!-- Google Drive embed -->
+          <iframe
+            src="https://drive.google.com/file/d/1Ltml1jwHWcBG-rTR51VZx519HkYAA_xr/preview"
+            allow="autoplay; fullscreen"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+
+      <section id="deliverables">
+        <h2>Project Deliverables</h2>
+        <p>
+          Selected artifacts from this project:
+        </p>
+        <div class="deliverables-list">
+          <a href="3pdf.pdf" target="_blank">▶ Final Presentation Slides (PDF)</a><br>
+          <a href="mindmap.pdf" target="_blank">▶ Focus & AR Feature Mindmap (PDF)</a><br>
+          <a href="Business-2.pdf" target="_blank">▶ Early Concept Deck / Needfinding Summary (PDF)</a>
+        </div>
+      </section>
+
+      <section id="reflection">
+        <h2>Personal Reflection</h2>
+        <p>
+          This project helped me connect my own learning challenges with a broader design problem. I have a
+          hard time maintaining focus during long lectures; I often miss small but important details and then
+          feel lost when the topic moves on. While interviewing students with similar issues, I realized that
+          my experience is not unique – many classmates silently struggle in the same way. This made the
+          project feel very personal and kept me motivated to design something that would genuinely help us.
+        </p>
+        <p>
+          Working on the interview and POV section taught me how powerful good needfinding can be.
+          At first, our ideas about AR in education were very general and almost “sci-fi.” After talking with
+          teachers and students, I learned to frame the problem more precisely: professors need to maintain
+          engagement without extra workload, while students need real-time, lightweight support that fits
+          inside the existing classroom flow. Translating raw interview notes into clear POV statements was
+          challenging, but it forced me to prioritize which needs were truly critical.
+        </p>
+        <p>
+          I also noticed how my own attention issues influenced the features I pushed for. For example,
+          I strongly supported progress bars, visual emphasis on key moments, and subtle notifications for
+          when an important concept started. These came directly from thinking about the moments when
+          my mind drifts and what could gently bring it back without overwhelming me. In this sense, I was
+          both a designer and a user, and I had to be careful to check my personal biases against actual
+          interview data.
+        </p>
+        <p>
+          Throughout the project I used AI tools mainly to brainstorm question wording, clean up survey
+          text, and organize notes into themes. However, the final interpretations and design decisions
+          were made by our team. This experience showed me that AI can speed up some mechanical parts
+          of the process, but deep understanding still requires human judgment and empathy.
+        </p>
+        <p>
+          Looking forward, I would like to explore how this AR system could adapt to different kinds of
+          attention problems and languages in a more personalized way. For example, the interface could
+          slowly reduce the amount of support as a student becomes more confident, or it could highlight
+          concepts differently depending on the student’s learning style. Overall, this project made me more
+          aware of the invisible struggles that happen in a classroom and how thoughtful interaction design
+          can make learning more inclusive for everyone, including myself.
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><a href="index.html">← Back to Portfolio</a></p>
+    </div>
+  </footer>
+</body>
+</html>
 
